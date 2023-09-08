@@ -1,6 +1,7 @@
 resource "kubernetes_deployment" "example" {
   metadata {
     name = "terraform-example"
+    namespace = "flux-system"
     labels = {
       test = "MyExampleApp"
     }
